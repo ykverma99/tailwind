@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="bg-neutral-50 h-screen w-full">
+        <nav class="flex justify-between items-center px-6 py-4 relative md:h-20 md:mx-8">
+            <div class="flex gap-2 items-center justify-center">
+                <div class=" w-6 h-6 bg-yellow-400 rounded-full md:h-8 md:w-8"></div>
+                <h1 class=" text-2xl font-semibold md:text-3xl md:font-bold">Nicol Rider</h1>
+                <span class=" inline mt-2 px-1">Editior</span>
+            </div>
+
+            <div class="">
+                <div id="menu" class=" space-y-1 cursor-pointer md:hidden">
+                    <span class="flex h-0.5 w-7 bg-black"></span>
+                    <span  class="flex h-0.5 w-7 bg-black"></span>
+                    <span  class="flex h-0.5 w-7 bg-black"></span>
+                </div>
+
+                <div id="list" class="hidden md:block bg-neutral-100 absolute left-0 h-screen w-full top-16 transition ease-in-out duration-700 md:static md:bg-neutral-50  md:h-0">
+                    <div class=" cursor-pointer flex flex-col justify-center items-center text-2xl gap-6 h-96 md:flex-row md:h-0 md:text-base md:mx-5 md:font-thin md:gap-1">    
+                        <!-- <div class="border-r-2 px-2 flex flex-row"> -->
+                            <a href="#" class="md:border-r-2 md:border-gray-500 md:px-2">Resume</a>
+                        <!-- </div> -->
+                        <a href="#" class="md:border-r-2 md:border-gray-500 md:px-2">Project</a>
+                        <a href="#" class="px-2">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="py-5 mt-5 flex flex-col md:flex-row-reverse justify-center items-center gap-16 px-8">
+            <div class="flex flex-col gap-3">
+                <div>
+                    <h2 class="text-6xl font-bold">Hello</h2>
+                </div>
+
+                <div class="flex flex-col gap-12">
+                    <div class="pl-3">
+                        <h3 class=" text-xl font-bold mb-3">A Bit About Me</h3>
+                        <p class="text-lg md:max-w-md">I'm a paragraph. Click here to add your own text and edit me. I'm a great place for you to tel a story and let your users know a littile more about you</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="h-24 w-24 flex items-center justify-center rounded-full  border border-gray-700 bg-green-300">
+                            <h3 class="text-xl font-semibold"><a href="#">Resume</a></h3>
+                        </div>
+                        <div  class="h-24 w-24 flex items-center justify-center rounded-full  border border-gray-700 bg-red-500">
+                            <h3  class="text-xl font-semibold"><a href="#">Projects</a></h3>
+                        </div>
+                        <div  class="h-24 w-24 flex items-center justify-center rounded-full border border-gray-700 bg-yellow-300">
+                            <h3  class="text-xl font-semibold"><a href="#">Contact</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class=" w-72 md:w-80">
+                    <img class="w-full rounded-full" src="./images/girl.webp" alt="hello">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./javascript/app.js"></script>
+</body>
+</html>
